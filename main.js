@@ -1,5 +1,4 @@
-const API_KEY = config.apiKey; //api키 저장
-console.log(API_KEY);
+const API_KEY = "b1057de1626ec7687c16d18cbf820a6d"; //api키 저장
 let lat; // 위도
 let lon; // 경도
 let corData; // 위도경도 데이터
