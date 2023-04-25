@@ -1,0 +1,214 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: Space Grotesk,Arial,sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #48484a;
+    width: 100%;
+    height: 90px;
+    color: rgb(241, 93, 70);
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+}
+.title h1:first-child{
+    color: white;
+}
+.title h1{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.input-box input{
+    height: 25px;
+    width: 170px;
+    background-color: #48484a;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+}
+.input-box input:focus{
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.input-box button{
+    height: 35px;
+    width: 35px;
+    background-color: #48484a;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+article{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+.main-article{
+    width: 900px;
+}
+.top-section{
+    display: flex;
+    height: 250px; 
+    width:100%;
+}
+.bottom-section{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    margin-top: 1em;
+}
+#local-information{
+    width: 30%;
+}
+#map{
+    width: 70%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
+#hourly-forecast-area{
+    width: 60%;
+    height: 100%;
+}
+#day-forecast-area{
+    width: 40%;
+}
+section h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+.date{
+    color: #eb6e4b;
+    font-family: Space Grotesk,Arial,sans-serif;
+    font-size : 14px;
+}
+.local-name{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Space Grotesk", Arial, sans-serif !important;
+}
+.local-temp{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Space Grotesk,Arial,sans-serif;
+    margin-top: 20px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.temp-detail div{
+    font-weight: 700;
+    font-family: "Space Grotesk", Arial, sans-serif !important;
+    font-size: 14px;
+}
+.temp-detail ul{
+    list-style: none;
+    border-left: 1px solid #eb6e4b;
+    padding-left: 20px;
+}
+.temp-detail li{
+    font-family: Space Grotesk,Arial,sans-serif;
+    font-size: 14px;
+}
+#day-forecast{
+    list-style: none;
+    padding: 0 10px;
+    margin:0;
+}
+#day-forecast>li{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+#day-forecast div{
+    display: flex;
+}
+.day-forecast-value{
+    width: 220px;
+    justify-content: space-between;
+}
+.description{
+    font-size: 12px;
+}
+.chart-container{
+    position: relative;
+    overflow-x: scroll;
+    width: 95%;
+}
+@media screen and (max-width:48rem){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        height: 150px;
+    }
+    .title{
+        margin-top: 10px;
+    }
+    .input-box{
+        width: 180px;
+    }
+    .input-box input{
+        width: 70%;
+        font-size: 14px;
+    }
+    .input-box input:focus{
+        font-size: 14px;
+    }
+    .input-box button{
+        width: 20%;
+        font-size: 15px;
+    }
+    .main-article{
+        width: 100%;
+        height: 100vh;
+    }
+    .top-section{
+        flex-direction: column;
+        height: 60%;
+    }
+    .bottom-section{
+        flex-direction: column;
+        height: 100%;
+    }
+    #local-information{
+        width: 100%;
+        display: flex;
+        height: 200px;
+        justify-content: space-around;
+    }
+    .temp-detail{
+        height: 200px;
+        position: relative;
+        top: 20px;
+    }
+    #map{
+        width: 100%;
+    }
+    #hourly-forecast-area{
+        width: 100%;
+        height: 60%;
+    }
+    #day-forecast-area{
+        width: 100%;
+    }
+    h5{
+        margin-left: 1em;
+    }
+
+    
+}
